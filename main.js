@@ -67,4 +67,8 @@ const mathsEquation = (numb1, numb2, operator) => {
   display.innerHTML = mathsEquation;
 };
 
+const handleSum = () => {
+  display.innerHTML = mathsEquation(numb1, numb2, operator);
+};
 
+equals.addEventListener("click", handleSum);
