@@ -1,0 +1,79 @@
+@use "_base.scss";
+@use "_variables.scss";
+
+.calc_buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 10px;
+}
+
+#butt_clear {
+  grid-area: 1 / 1 / 2 / 2;
+}
+#butt_plus-minus {
+  grid-area: 1 / 2 / 2 / 3;
+}
+#butt_percent {
+  grid-area: 1 / 3 / 2 / 4;
+}
+#butt_divide {
+  grid-area: 1 / 4 / 2 / 5;
+}
+#butt_seven {
+  grid-area: 2 / 1 / 3 / 2;
+}
+#butt_eight {
+  grid-area: 2 / 2 / 3 / 3;
+}
+#butt_nine {
+  grid-area: 2 / 3 / 3 / 4;
+}
+#butt_times {
+  grid-area: 2 / 4 / 3 / 5;
+}
+#butt_four {
+  grid-area: 3 / 1 / 4 / 2;
+}
+#butt_five {
+  grid-area: 3 / 2 / 4 / 3;
+}
+#butt_six{
+  grid-area: 3 / 3 / 4 / 4;
+}
+#butt_minus {
+  grid-area: 3 / 4 / 4 / 5;
+}
+#butt_one {
+  grid-area: 4 / 1 / 5 / 2;
+}
+#butt_two {
+  grid-area: 4 / 2 / 5 / 3;
+}
+#butt_three {
+  grid-area: 4 / 3 / 5 / 4;
+}
+#butt_plus {
+  grid-area: 4 / 4 / 5 / 5;
+}
+#butt_zero {
+  grid-area: 5 / 1 / 6 / 3;
+}
+#butt_dot {
+  grid-area: 5 / 3 / 6 / 4;
+}
+#butt_equals {
+  grid-area: 5 / 4 / 6 / 5;
+}
+
+.calc_Display {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 500px;
+    font-size: 20px;
+    color: white;
+    background-color: $color-primary;
+  }
