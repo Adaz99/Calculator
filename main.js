@@ -4,6 +4,7 @@ const display = document.querySelector(".calc_Display");
 const equals = document.querySelector(".equals");
 const operators = Array.from(document.querySelectorAll(".operator"));
 
+
 let numb1 = "";
 
 let numb2 = "";
@@ -23,7 +24,7 @@ numbButtons.forEach((nums) => {
 });
 console.log(numbButtons);
 
-// operators are displaying
+// operators are displaying when clicked
 operators.forEach((button) => {
   button.addEventListener("click", (event) => {
     if (numb1 != "") {
@@ -42,9 +43,7 @@ const reset = () => {
 };
 clearAll.addEventListener("click", reset);
 
-// let numb1 = "";
-// let numb2 = "";
-// let operator = "";
+// Got the basic operators working including %
 
 const mathsEquation = (numb1, numb2, operator) => {
   let newNumb1 = Number(numb1);
@@ -63,8 +62,13 @@ const mathsEquation = (numb1, numb2, operator) => {
   } else if (operator === "*") {
     result = newNumb1 * newNumb2;
     return result;
+  } else if (operator === "%") {
+    result = (newNumb1 / 100);
+    return result;
+  }else if (operator === "%") {
+    result = (newNumb1 / 100) * 100;
+    return result;
   }
-  display.innerHTML = mathsEquation;
 };
 
 const handleSum = () => {
@@ -72,3 +76,5 @@ const handleSum = () => {
 };
 
 equals.addEventListener("click", handleSum);
+
+
