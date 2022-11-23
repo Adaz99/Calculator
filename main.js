@@ -49,7 +49,6 @@ posNeg.addEventListener("click", (event) => {
 });
 
 
-
 // Clears text from calculator display
 const reset = () => {
   numb1 = "";
@@ -92,6 +91,15 @@ const basicCalc = () => {
   
 };
 
-
+decimal.addEventListener("click", () => {
+  if (numb1.includes(".") && numb2.includes(".")) {
+  } else if (numb2 == "") {
+    display.innerHTML = `${display.innerHTML}` + ".";
+    numb1 += ".";
+  } else {
+    display.innerHTML = `${display.innerHTML}` + ".";
+    numb2 += ".";
+  }
+});
 
 equals.addEventListener("click", basicCalc);
