@@ -3,10 +3,11 @@ const clearAll = document.querySelector(".clear");
 const display = document.querySelector(".calc_Display");
 const equals = document.querySelector(".equals");
 const operators = Array.from(document.querySelectorAll(".operator"));
-const posNeg = document.querySelector("posNeg");
-const display2 = document.querySelector(".calc_Display2");
-const pogNeg = document.queryCommandIndeterm(".posNeg")
+const posNeg = document.querySelector(".posNeg");
+const decimal = document.querySelector("#butt_dot");
 
+
+// empty strings 
 let numb1 = "";
 
 let numb2 = "";
@@ -35,6 +36,19 @@ operators.forEach((button) => {
     display.innerHTML += event.target.innerHTML;
   });
 });
+
+posNeg.addEventListener("click", (event) => {
+  numb1 = Number(display.innerHTML);
+  if (display.innerHTML.includes("-")) {
+    numb1 = Math.abs(numb1);
+    display.innerHTML = numb1;
+  } else {
+    numb1 = -Math.abs(numb1);
+    display.innerHTML = numb1;
+  }
+});
+
+
 
 // Clears text from calculator display
 const reset = () => {
@@ -71,13 +85,13 @@ const mathsEquation = (numb1, numb2, operator) => {
 };
 
 const basicCalc = () => {
-  const answer = mathsEquation(numb1, numb2, operator)
-  numb1 = answer 
-  numb2 = ""
-  display.innerHTML = answer
+  const answer = mathsEquation(numb1, numb2, operator);
+  numb1 = answer;
+  numb2 = "";
+  display.innerHTML = answer;
+  
 };
 
 
 
 equals.addEventListener("click", basicCalc);
-
