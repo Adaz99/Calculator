@@ -3,7 +3,9 @@ const clearAll = document.querySelector(".clear");
 const display = document.querySelector(".calc_Display");
 const equals = document.querySelector(".equals");
 const operators = Array.from(document.querySelectorAll(".operator"));
-
+const posNeg = document.querySelector("posNeg");
+const display2 = document.querySelector(".calc_Display2");
+const pogNeg = document.queryCommandIndeterm(".posNeg")
 
 let numb1 = "";
 
@@ -63,18 +65,19 @@ const mathsEquation = (numb1, numb2, operator) => {
     result = newNumb1 * newNumb2;
     return result;
   } else if (operator === "%") {
-    result = (newNumb1 / 100);
-    return result;
-  }else if (operator === "%") {
-    result = (newNumb1 / 100) * 100;
+    result = newNumb1 / 100;
     return result;
   }
 };
 
-const handleSum = () => {
-  display.innerHTML = mathsEquation(numb1, numb2, operator);
+const basicCalc = () => {
+  const answer = mathsEquation(numb1, numb2, operator)
+  numb1 = answer 
+  numb2 = ""
+  display.innerHTML = answer
 };
 
-equals.addEventListener("click", handleSum);
 
+
+equals.addEventListener("click", basicCalc);
 
