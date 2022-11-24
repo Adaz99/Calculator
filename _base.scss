@@ -1,26 +1,11 @@
 @use "./variables" as *;
-*{
-    background-color: rgb(125, 118, 255);
-    background-color: linear-gradient(90deg, rgb(10, 6, 99) 0%, rgba(9,9,121,1) 5%, rgba(0,212,255,1) 100%);
-
-button {
-    
-    background-color: $color-button;
-    font-size: 30px;
-    border-radius: 50%;
-    
-  }
-
-.buttOrange{
-    
-    background-color: $color-orangebut;
-    :hover {
-        cursor: pointer;
-    }
-}
-
-.buttLightGrey{
-    background-color: $color-lightGrey;
-}
-
+* {
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
 }

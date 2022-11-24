@@ -1,6 +1,11 @@
 * {
   background-color: rgb(125, 118, 255);
-  background-color: linear-gradient(90deg, rgb(10, 6, 99) 0%, rgb(9, 9, 121) 5%, rgb(0, 212, 255) 100%);
+  background-color: linear-gradient(
+    90deg,
+    rgb(10, 6, 99) 0%,
+    rgb(9, 9, 121) 5%,
+    rgb(0, 212, 255) 100%
+  );
 }
 * button {
   background-color: #3b3a3a;
@@ -110,4 +115,4 @@
   font-size: 20px;
   color: white;
   background-color: black;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

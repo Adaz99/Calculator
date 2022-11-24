@@ -39,7 +39,7 @@
 #butt_five {
   grid-area: 3 / 2 / 4 / 3;
 }
-#butt_six{
+#butt_six {
   grid-area: 3 / 3 / 4 / 4;
 }
 #butt_minus {
@@ -68,12 +68,25 @@
 }
 
 .calc_Display {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    height: 100px;
-    width: 500px;
-    font-size: 20px;
-    color: white;
-    background-color: $color-primary;
-  }
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  height: 100px;
+  width: 500px;
+  font-size: 20px;
+  color: white;
+}
+
+.button {
+  background-color: $color-button;
+  font-size: 30px;
+  border-radius: 6%;
+}
+
+.buttOrange {
+  background-color: $color-orangebut;
+}
+
+.buttLightGrey {
+  background-color: $color-lightGrey;
+}
