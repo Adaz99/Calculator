@@ -117,4 +117,18 @@ button {
 
 .buttLightGrey {
   background-color: #a5a5a5;
+}
+
+@media screen and (min-width: 1024px) {
+  .calc_Display {
+    text-align: center;
+    margin-bottom: 10px;
+    height: 20vh;
+    width: 99vw;
+  }
+  .calc_buttons {
+    height: 70vh;
+    width: 99vw;
+    display: grid;
+  }
 }/*# sourceMappingURL=main.css.map */
