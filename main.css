@@ -1,28 +1,11 @@
-* {
-  background-color: rgb(125, 118, 255);
-  background-color: linear-gradient(
-    90deg,
-    rgb(10, 6, 99) 0%,
-    rgb(9, 9, 121) 5%,
-    rgb(0, 212, 255) 100%
-  );
-}
-* button {
-  background-color: #3b3a3a;
-  font-size: 30px;
-  border-radius: 50%;
-}
-* .buttOrange {
-  background-color: #f19938;
-}
-* .buttOrange :hover {
-  cursor: pointer;
-}
-* .buttLightGrey {
-  background-color: #a5a5a5;
+body {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
 }
 
 .calc_buttons {
+  height: 70vh;
+  width: 98vw;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -107,12 +90,31 @@
 }
 
 .calc_Display {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-bottom: 10px;
-  height: 100px;
-  width: 500px;
-  font-size: 20px;
+  height: 20vh;
+  width: 97vw;
+  font-size: 2rem;
   color: white;
+  border: solid 2px white;
   background-color: black;
-} /*# sourceMappingURL=main.css.map */
+  align-self: center;
+}
+
+button {
+  background-color: #3b3a3a;
+  font-size: 2rem;
+  border-radius: 10%;
+}
+
+.buttOrange {
+  background-color: #f19938;
+}
+
+.buttGrey {
+  background-color: #3b3a3a;
+}
+
+.buttLightGrey {
+  background-color: #a5a5a5;
+}/*# sourceMappingURL=main.css.map */

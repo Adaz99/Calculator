@@ -1,7 +1,8 @@
-@use "base.scss";
-@use "variables.scss";
+@use "variables.scss" as *;
 
 .calc_buttons {
+  height: 70vh;
+  width: 98vw;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -68,25 +69,32 @@
 }
 
 .calc_Display {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-bottom: 10px;
-  height: 100px;
-  width: 500px;
-  font-size: 20px;
+  height: 20vh;
+  width: 97vw;
+  font-size: 2rem;
   color: white;
+  border: solid 2px white;
+  background-color: black;
+  align-self: center;
 }
 
-.button {
+button {
   background-color: $color-button;
-  font-size: 30px;
-  border-radius: 25%;
+  font-size: 2rem;
+  border-radius: 10%;
 }
 
 .buttOrange {
-  background-color: $color-orangebut;
+  background-color: $color-orangeBut;
+}
+
+.buttGrey {
+  background-color: $color-button;
 }
 
 .buttLightGrey {
   background-color: $color-lightGrey;
 }
+

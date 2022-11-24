@@ -1,13 +1,9 @@
 @use "./variables" as *;
-* {
-  background-image: linear-gradient(
-    to right top,
-    #051937,
-    #004d7a,
-    #008793,
-    #00bf72,
-    #a8eb12
+body {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
   );
-
-
 }
