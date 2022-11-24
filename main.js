@@ -1,4 +1,4 @@
-// Creating variables for js which will be used 
+// Creating variables for js which will be used
 const numbButtons = Array.from(document.querySelectorAll(".number"));
 const clearAll = document.querySelector(".clear");
 const displayCalc = document.querySelector(".calc_Display");
@@ -6,7 +6,6 @@ const equals = document.querySelector(".equals");
 const operators = Array.from(document.querySelectorAll(".operator"));
 const posNeg = document.querySelector(".posNeg");
 const decimal = document.querySelector("#butt_dot");
-
 
 // empty strings will be used for storing operators and numbs
 let numb1 = "";
@@ -50,7 +49,6 @@ posNeg.addEventListener("click", (event) => {
   }
 });
 
-
 // Clears text from calculator display when the button is clicked
 const reset = () => {
   numb1 = "";
@@ -81,7 +79,6 @@ const mathsEquation = (numb1, numb2, operator) => {
   } else if (operator === "%") {
     result = newNumb1 / 100;
     return result;
-    
   }
 };
 
@@ -91,7 +88,6 @@ const basicCalc = () => {
   numb1 = answer;
   numb2 = "";
   displayCalc.innerHTML = answer;
-  
 };
 
 //created a decimal function which allows the use of decimals for both numbers
