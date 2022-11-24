@@ -1,5 +1,5 @@
-@use "_base.scss";
-@use "_variables.scss";
+@use "base.scss";
+@use "variables.scss";
 
 .calc_buttons {
   display: grid;
@@ -80,7 +80,7 @@
 .button {
   background-color: $color-button;
   font-size: 30px;
-  border-radius: 6%;
+  border-radius: 25%;
 }
 
 .buttOrange {
